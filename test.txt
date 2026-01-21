@@ -1,0 +1,23 @@
+What is embedding?
+An embedding is like turning words or sentences into numbers so a computer can understand their meaning.
+Example:
+“Cat” might become [0.9, 0.2, 0.1]
+“Dog” might become [0.8, 0.25, 0.12]
+Because the numbers are close, the computer knows cat and dog mean similar things.
+So embedding = a way to represent meaning as numbers.
+Why do we use vectors?
+A vector is just a list of numbers.
+When we make an embedding, we need a format that keeps all those numbers together — that’s exactly what a vector is.
+Using vectors lets the computer measure:
+How close two meanings are (using distance between vectors)
+What direction the meaning moves in (e.g., man → woman, car → truck)
+So we use vectors because they let the computer compare meanings with math — fast and accurate.
+What is a vector database?
+A vector database is a special kind of storage that can quickly find which embeddings (vectors) are most similar to a new one.
+When you ask a question, your question becomes a vector — the database finds the closest stored vectors (the most related pieces of text).
+It’s like a search engine that looks for similar meanings, not just matching words.
+In one line:
+Embedding → turns text into numbers that show meaning.
+Vector → holds those numbers together so we can measure similarity.
+Vector Database → finds which stored meanings are closest to what you asked.
+That’s how RAG “remembers” and finds the right info before the AI answers
